@@ -25,6 +25,17 @@ const Home = () => {
                 </div>
 
             </div>
+            <div className="section2">
+
+                <div className="text_container">
+                    <span className="sizeSmall">Welcome to</span>
+                    <span className="sizeSmall">Porta Mascarella 7</span>
+                    <span className="sizeBig">Di Felice</span>
+                </div>
+
+               
+
+            </div>
             
 
 
