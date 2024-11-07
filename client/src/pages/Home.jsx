@@ -16,7 +16,7 @@ const Home = () => {
 
                 <div className="text_container">
                     <span className="sizeSmall">Welcome to</span>
-                    <span className="sizeSmall">Porta Mascarella 7</span>
+                    <span className="sizeSmall span">Porta Mascarella 7</span>
                     <span className="sizeBig">Di Felice</span>
                 </div>
 
@@ -29,11 +29,11 @@ const Home = () => {
 
                 <div className="text_container">
                     <span className="sizeSmall">Welcome to</span>
-                    <span className="sizeSmall">Porta Mascarella 7</span>
+                    <span className="sizeSmall span">Porta Mascarella 7</span>
                     <span className="sizeBig">Di Felice</span>
                 </div>
 
-               
+                
 
             </div>
             

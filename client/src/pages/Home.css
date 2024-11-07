@@ -1,6 +1,6 @@
 .home_container {
   background-color: white;
-  position: relative;
+  height: 100%;
 }
 .home_container .navbar_container {
   display: flex;
@@ -16,12 +16,14 @@
 .home_container .navbar_container .logo {
   width: 40px;
   margin-right: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
 }
 .home_container .navbar_container .porta {
   font-size: larger;
 }
 .home_container .section1 {
-  height: calc(100vh - 90px);
+  height: calc(100vh - 81px);
   position: relative;
 }
 .home_container .section1 .text_container {
@@ -30,12 +32,14 @@
   align-items: center;
   font-weight: 800;
   position: relative;
-  top: 10%;
+  top: 900px;
+  padding-top: 70px;
+  transform: translate(0%, -900px);
   z-index: 50;
+  transition: 1s;
 }
 .home_container .section1 .text_container .span {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
 }
 .home_container .section1 .text_container .sizeSmall {
   font-size: 30px;
@@ -50,4 +54,6 @@
 }
 .home_container .section1 .image_container .image {
   width: 100%;
+  position: relative;
+  bottom: -4px;
 }/*# sourceMappingURL=Home.css.map */
