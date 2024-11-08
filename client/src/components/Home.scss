@@ -222,7 +222,7 @@
 
     .home_container{
         .landing_section{
-            height: 70vh
+            height: 80vh
         }
     }
     .room_section{
@@ -231,7 +231,10 @@
         .master_room_section{
             height: 50vh;
             border-bottom: solid lightgrey 1px;
-          margin-bottom: 30px;
+            margin-bottom: 30px;
+            a{
+                margin-bottom: 30px;
+            }
         }
         .single_room_section{
             height: 50vh;
@@ -263,7 +266,7 @@
                 flex-direction: column;
                 align-items: center;
                 iframe{
-                    width: 300px;
+                    width: 350px;
                     height: 200px;
                 }
 
