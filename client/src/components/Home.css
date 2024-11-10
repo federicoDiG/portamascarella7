@@ -23,7 +23,7 @@
   font-size: larger;
 }
 .home_container .landing_section {
-  height: calc(100vh - 81px);
+  height: 90vh;
   position: relative;
 }
 .home_container .landing_section .text_container {
@@ -57,30 +57,55 @@
   position: relative;
   bottom: -4px;
 }
-.home_container .room_section {
+
+.map_section {
   display: flex;
-  height: 100vh;
+  margin-bottom: 50px;
 }
-.home_container .room_section .master_room_section {
+.map_section .map_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.map_section .map_container iframe {
+  border: 0;
+  width: 500px;
+  height: 400px;
+  box-shadow: 5px 5px 5px 5px grey;
+  border-radius: 20px;
+}
+.map_section .hint_container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: center;
+}
+
+.room_section {
+  display: flex;
+  height: 80vh;
+}
+.room_section .master_room_section {
   display: flex;
   align-items: center;
 }
-.home_container .room_section .master_room_section .room_container {
+.room_section .master_room_section .room_container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.home_container .room_section .master_room_section .room_container .description_container {
+.room_section .master_room_section .room_container .description_container {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-right: solid lightgray 1px;
 }
-.home_container .room_section .master_room_section .room_container .description_container span {
+.room_section .master_room_section .room_container .description_container span {
   padding-top: 20px;
 }
-.home_container .room_section .master_room_section .room_container .description_container a {
+.room_section .master_room_section .room_container .description_container a {
   margin-top: 10px;
   background-color: rgb(158, 0, 0);
   color: white;
@@ -90,38 +115,38 @@
   box-shadow: 1px 2px grey;
   text-decoration: none;
 }
-.home_container .room_section .master_room_section .room_container .description_container a:hover {
+.room_section .master_room_section .room_container .description_container a:hover {
   background-color: darkred;
   transition: 0.3s;
 }
-.home_container .room_section .master_room_section .room_container .image_container {
+.room_section .master_room_section .room_container .image_container {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.home_container .room_section .master_room_section .room_container .image_container img {
+.room_section .master_room_section .room_container .image_container img {
   width: 80%;
 }
-.home_container .room_section .single_room_section {
+.room_section .single_room_section {
   display: flex;
   align-items: center;
 }
-.home_container .room_section .single_room_section .room_container {
+.room_section .single_room_section .room_container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.home_container .room_section .single_room_section .room_container .description_container {
+.room_section .single_room_section .room_container .description_container {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.home_container .room_section .single_room_section .room_container .description_container span {
+.room_section .single_room_section .room_container .description_container span {
   padding-top: 20px;
 }
-.home_container .room_section .single_room_section .room_container .description_container a {
+.room_section .single_room_section .room_container .description_container a {
   margin-top: 10px;
   background-color: rgb(158, 0, 0);
   color: white;
@@ -131,81 +156,121 @@
   box-shadow: 1px 2px grey;
   text-decoration: none;
 }
-.home_container .room_section .single_room_section .room_container .description_container a:hover {
+.room_section .single_room_section .room_container .description_container a:hover {
   background-color: darkred;
   transition: 0.3s;
 }
-.home_container .room_section .single_room_section .room_container .image_container {
+.room_section .single_room_section .room_container .image_container {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.home_container .room_section .single_room_section .room_container .image_container img {
+.room_section .single_room_section .room_container .image_container img {
   width: 80%;
 }
-@media (max-width: 480px) {
-  .home_container .room_section {
-    height: 100%;
-    flex-direction: column;
-  }
-  .home_container .room_section .master_room_section {
-    height: 70vh;
-    border-bottom: solid lightgrey 1px;
-  }
-  .home_container .room_section .single_room_section {
-    height: 70vh;
-  }
-  .home_container .room_section span {
-    width: 90%;
-    text-align: center;
-  }
-}
-.home_container .info_section {
+
+.info_section {
   height: -moz-max-content;
   height: max-content;
   padding-left: 50px;
 }
-.home_container .info_section .info_container {
+.info_section .info_container {
   display: flex;
   align-items: center;
 }
-.home_container .info_section .info_container .info_list {
+.info_section .info_container .info_list {
   flex: 1.2;
 }
-.home_container .info_section .info_container .video_container {
+.info_section .info_container .video_container {
   display: flex;
   flex-direction: column;
   flex: 1;
   align-items: center;
 }
-@media (max-width: 480px) {
-  .home_container .info_section {
-    padding-left: 0px;
-  }
-  .home_container .info_section .info_container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .home_container .info_section .info_container .info_list ul {
-    position: relative;
-    left: -20px;
-  }
-  .home_container .info_section .info_container .video_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.home_container .footer_section {
-  height: 20vh;
-  margin: 0px 20% 0px 20%;
+
+.footer_section {
+  margin: 0px 10% 0px 10%;
   border-top: solid lightgrey 1px;
   margin-top: 30px;
+  padding-bottom: 30px;
 }
-.home_container .footer_section .contact_container .info_row {
+.footer_section .contact_container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_section .contact_container .info_row {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .home_container .landing_section {
+    height: 80vh;
+  }
+  .room_section {
+    height: 100%;
+    flex-direction: column;
+  }
+  .room_section .master_room_section {
+    border-bottom: solid lightgrey 1px;
+  }
+  .room_section .master_room_section a {
+    margin-bottom: 30px;
+  }
+  .room_section .single_room_section {
+    margin-bottom: 30px;
+  }
+  .room_section span {
+    width: 90%;
+    text-align: center;
+  }
+  .info_section {
+    padding-left: 0px;
+  }
+  .info_section h1 {
+    margin-left: 10px;
+  }
+  .info_section .info_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .info_section .info_container .info_list ul {
+    position: relative;
+    left: -20px;
+  }
+  .info_section .info_container .video_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info_section .info_container .video_container iframe {
+    width: 350px;
+    height: 200px;
+  }
+  .map_section {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .map_section .map_container {
+    margin-bottom: 20px;
+    gap: 5px;
+  }
+  .map_section .map_container iframe {
+    border: 0;
+    width: 350px;
+    height: 270px;
+  }
+  .map_section .hint_container {
+    width: 80%;
+  }
+  .footer_section {
+    font-size: small;
+  }
 }/*# sourceMappingURL=Home.css.map */
